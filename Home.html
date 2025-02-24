@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio di Vincenzo</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Benvenuto nel mio DevFolio</h1>
+        </div>
+    </header>
+    <!-- sezione chi sono del portfolio-->
+   <section id="chi-sono">
+    <div class="container">
+        <h2>Chi Sono</h2>
+        <div class="chi-sono-contenuto">
+            <div class="foto-profilo">
+                <img src="Assets/Img_project/PortFolio_img.jpg" alt="Vincenzo" />
+            </div>
+            <div class="testo-chi-sono">
+                <p>Ciao! Sono Vincenzo, un appassionato programmatore web con un amore per il design e la creazione di esperienze digitali uniche. Mi occupo principalmente di sviluppo front-end, ma ho anche esperienza nel back-end e nel full-stack development.</p>
+                <p>Ho iniziato la mia carriera alcuni anni fa, quando ho scoperto che la programmazione mi dava la possibilità di trasformare le idee in realtà. Da quel momento, ho dedicato molte ore a migliorare le mie competenze, imparando nuove tecnologie e affrontando sfide stimolanti. Ogni progetto è una nuova opportunità di crescita per me.</p>
+                <p>Quando non sono impegnato a scrivere codice, mi piace uscire con gli amici, andare allo stadio e assistere a eventi sportivi.</p>
+                <div class="quote">
+                    <p>"La programmazione è la lingua che usiamo per costruire il futuro."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- sezione dei progetti con collegamento a github e barra con i vari social-->
+    <section id="progetti">
+        <div class="container">
+            <h2>I miei progetti</h2>
+            <div class="progetto">
+                <h3>Sito personale su GitHub </h3>
+                <p>Ho creato questo sito come vetrina delle mie competenze. È ospitato su GitHub e mostra i miei progetti principali.</p>
+                <a href="https://github.com/vincenzo84737w" target="_blank" class="btn">Visita il sito</a>
+                <section id="galleria">
+                    <div class="container">
+                        <h2>Progetti Svolti</h2>
+                        <div class="galleria">
+                            <div class="immagine-progetto">
+                                <img src="Assets/Img_project/Project_page_html.png" >
+                                <p>Replica Pagina di Html.it </p>
+                            </div>
+                            <div class="immagine-progetto">
+                                <img src="Assets/Img_project/Progetto blogF1.png" alt="Descrizione progetto 2">
+                                <p>Creazione di un blog riguardante la f1</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>             
+            </div>
+        </div>
+    </section>
+
+  <section id="competenze">
+    <div class="container">
+        <h2>Le mie Competenze</h2>
+        <div class="competenze-container">
+            <div class="competenza">
+                <h3>HTML & CSS</h3>
+                <p>Esperienza nella creazione di siti web responsive e ben strutturati utilizzando HTML5 e CSS3.</p>
+            </div>        
+            <div class="competenza">
+                <h3>Git & GitHub</h3>
+                <p>Gestione del codice e collaborazione con il team utilizzando Git e GitHub per il versionamento del codice.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sezione dei tool che uso per scrivere codice-->
+<section id="tools">
+    <div class="container">
+        <h2 class="section-title">Gli Strumenti che Uso</h2>
+        <div class="tools-list">
+            <div class="tool-card">
+                <i class="fas fa-code"></i>
+                <h3>Editor di Codice</h3>
+                <p>Visual Studio Code</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-git"></i>
+                <h3>Controllo di Versione</h3>
+                <p>Git, GitHub</p>
+            </div>
+            <div class="tool-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p>Un linguaggio di programmazione versatile e potente,ideale per sviluppo web</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <section id="social">
+        <div class="container">
+            <h2>Seguimi sui social</h2>
+            <div class="social-icons">
+                <a href="https://github.com/vincenzo84737w" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/tuo-profilo" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/_v.grassi_/" target="_blank" class="social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- sezione contenente un form di contatto-->
+    <section id="contatto">
+        <div class="container">
+            <h2>Contattami</h2>
+            <form action="invia_email.php" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="messaggio">Messaggio</label>
+                    <textarea id="messaggio" name="messaggio" required></textarea>
+                </div>
+                <button type="submit" class="btn">Invia</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vincenzo Grassi - Tutti i diritti riservati</p>
+        </div>
+    </footer>
+</body>
+</html>
