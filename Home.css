@@ -539,3 +539,68 @@ button[type="submit"]:hover {
 .tool-card:hover i {
     color: #fff;
 }
+
+/*sticky navbar*/
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+.navbar a {
+    margin-top: 0;
+    color: #0073e6;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+.navbar a:hover {
+    transform: translateY(-10px);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+background-color: #f4f7fe;
+}
+
+.content_nav {
+    padding: 20px;
+    height: 2000px; /* Per simulare uno scroll lungo */
+}
+
+/* responsive burger menu*/
+
+@media (max-width: 768px) {
+    .menu-icon {
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 10px;
+        z-index: 1100;
+        font-size: 30px;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        background-color: #f1f1f1;
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: -50%;
+        padding: 20px;
+        transition: left 0.3s ease-in-out;
+        align-items: flex-start;
+    }
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        color: #0073e6;
+        text-align: left;
+    }
+    .nav-links.active {
+        left: 0;
+    }
+}
